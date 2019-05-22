@@ -7,10 +7,10 @@ import CreateTodo from "./components/create-todo.component";
 import EditTodo from "./components/edit-todo.component";
 import TodosList from "./components/todos-list.component";
 
-class App extends Component {
-  render() {
-    return (
-      <Router> 
+function App() {
+  return (
+    <div>
+        <Router> 
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link to="/" className="navbar-brand">MERN stack to-do app</Link>
@@ -33,8 +33,8 @@ class App extends Component {
           <Route path="/create" component={CreateTodo} />
         </div>
       </Router>
-    );
-  }
+    </div>
+  );
 }
 
 export default App;
